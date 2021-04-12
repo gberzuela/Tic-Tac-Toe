@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.aic {
+  align-items: center;
+}
+
+.main-container {
+  height: 100vh;
+  flex-direction: column;
+}
