@@ -42,17 +42,23 @@ const Game = () => {
       checkValues([board[0][0], board[1][1], board[2][2]]);
       checkValues([board[0][2], board[1][1], board[2][0]]);
     }
+
+    // Check if board is full
+    for (let row = 0; row < board.length; row++) {
+      for (let col = 0; col < board[0].length; col++) {
+        if (!board[row][col]) return;
+      }
+    }
+
+    setGameState("draw");
   };
 
   const checkValues = (values) => {
     const [val1, val2, val3] = values;
 
-    if (val1) {
-      if (val1 === val2 && val2 === val3) {
-        setGameState("winner");
-        setWinner(player);
-        return;
-      }
+    if (val1 && val1 === val2 && val2 === val3) {
+      setGameState("winner");
+      setWinner(player);
     }
   };
 
