@@ -1,4 +1,4 @@
-body {
+* {
   background-color: black;
   color: white;
 }
@@ -11,11 +11,10 @@ body {
   justify-content: center;
 }
 
-.aic {
-  align-items: center;
+.jcsb {
+  justify-content: space-between;
 }
 
-.main-container {
-  height: 100vh;
-  flex-direction: column;
+.aic {
+  align-items: center;
 }
