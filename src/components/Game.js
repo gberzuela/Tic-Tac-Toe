@@ -14,8 +14,8 @@ const Game = () => {
       <h1>Tic Tac Toe</h1>
       <Board setTurnMessage={setTurnMessage} setMessage={setMessage} />
       <div className="flex jcsb msg-container">
-        {turnMessage && <h4>{turnMessage}</h4>}
-        {message && <h4>{message}</h4>}
+        {turnMessage && <h3>{turnMessage}</h3>}
+        {message && <h3>{message}</h3>}
       </div>
     </div>
   );
