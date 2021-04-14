@@ -7,8 +7,6 @@ const Game = () => {
   const [message, setMessage] = useState("");
   const [turnMessage, setTurnMessage] = useState("Turn: X");
 
-  console.log(message);
-
   return (
     <div className="flex jcc aic main-container">
       <h1>Tic Tac Toe</h1>
